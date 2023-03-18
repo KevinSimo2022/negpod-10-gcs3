@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 integer = int(input("Please insert an integer:"))
 for i in range(integer +1):
-    if (i == 1):
+    if ((i == integer or i == integer -1) and i%2!=0):
+        print("{}".format(i))
+    elif (i == 1):
         print("Odd Numbers:{}".format(i), end=', ')
     elif (i%2!=0):
         print("{}".format(i), end=', ')
-    elif (i == integer and i%2!=0):
-        print("{}".format(i))
